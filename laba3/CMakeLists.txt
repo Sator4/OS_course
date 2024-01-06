@@ -1,6 +1,6 @@
 PROJECT(shmem)
-ADD_EXECUTABLE(laba3 my_shmem.hpp main.cpp)
+ADD_EXECUTABLE(laba3 main.cpp)
 IF (NOT WIN32)
     # В POSIX нужно линковаться к rt для shm_open() и к pthread для sem_open()
-    TARGET_LINK_LIBRARIES(my_shmem rt pthread)
+    TARGET_LINK_LIBRARIES(pthread)
 ENDIF (NOT WIN32)
