@@ -1,8 +1,0 @@
-[
-{
-  "directory": "D:/Github/OS_course/laba4/4.serial/build",
-  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\sertest.dir\\test.cpp.obj -c D:\\Github\\OS_course\\laba4\\4.serial\\test.cpp",
-  "file": "D:/Github/OS_course/laba4/4.serial/test.cpp",
-  "output": "CMakeFiles/sertest.dir/test.cpp.obj"
-}
-]
