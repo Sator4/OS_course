@@ -1,0 +1,3 @@
+D:/Github/OS_course/laba4/4.serial/build/CMakeFiles/sertest.dir
+D:/Github/OS_course/laba4/4.serial/build/CMakeFiles/edit_cache.dir
+D:/Github/OS_course/laba4/4.serial/build/CMakeFiles/rebuild_cache.dir

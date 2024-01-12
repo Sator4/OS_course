@@ -2,6 +2,10 @@ laba1/_build
 laba2/_build
 laba2/build
 laba3/build
+laba4/build
+laba4/log_all.txt
+laba4/log_hour.txt
+laba4/log_day.txt
 laba3/log.txt
 log.txt
 cmake-3.28.0-windows-x86_64
