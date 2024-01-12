@@ -6,6 +6,7 @@ laba4/build
 laba4/log_all.txt
 laba4/log_hour.txt
 laba4/log_day.txt
+laba4/log_all.txt.temp.txt
 laba3/log.txt
 log.txt
 cmake-3.28.0-windows-x86_64
