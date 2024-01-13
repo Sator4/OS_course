@@ -101,6 +101,7 @@ int main(int argc, char** argv)
 		read = false;
 	
 	cplib::SerialPort smport(std::string(argv[1]),cplib::SerialPort::BAUDRATE_115200);
+    
 	if (!smport.IsOpen()) {
 		std::cout << "Failed to open port '" << argv[1] << "'! Terminating..." << std::endl;
 		return -2;
@@ -144,7 +145,6 @@ int main(int argc, char** argv)
             if (current_time < 1000000000){
                 continue;
             }
-            std::cout << mystr << std::endl;
             write_log(to_string(current_temperature) + ' ' + to_time(current_time) + ' ' + to_string(current_time) + '\n', path_all);
             hour_average.sum += current_temperature;
             hour_average.entries_count++;
@@ -174,7 +174,7 @@ int main(int argc, char** argv)
         std::srand(std::time(nullptr));
         float current_temperature = 20;
 		for (int i = 0;;i++) {
-            current_temperature += float(std::rand() - RAND_MAX / 2) / float(RAND_MAX * 10);
+            current_temperature += float(std::rand() - RAND_MAX / 2) / float(RAND_MAX) / float(10);
             mystr = to_string(current_temperature) + ' ' + to_time(current_time) + ' ' + to_string(current_time) + ' ';
             smport << mystr;
             current_time += polling_rate_virtual;
